@@ -1,19 +1,16 @@
 package Backend.simple_blogs_CRUD.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.annotation.Id;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 @Table(name="simple-blogs")
 public class Information {
 
@@ -22,12 +19,12 @@ public class Information {
     private Long id;
 
     @Column(name="title")
-    private String Title;
+    private String title;
 
     @Column(name="description")
-    private String Description;
+    private String description;
 
     @Column(name="content")
-    private String Content;
+    private String content;
 
 }

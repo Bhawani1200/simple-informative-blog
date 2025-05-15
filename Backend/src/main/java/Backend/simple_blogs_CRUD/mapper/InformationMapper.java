@@ -10,15 +10,15 @@ public class InformationMapper {
                 information.getTitle(),
                 information.getDescription(),
                 information.getContent()
+
         );
     }
-
     public  static Information mapToInformation(InformationDto informationDto){
         return new Information(
-          informationDto.getId(),
+                informationDto.getId(),
                 informationDto.getTitle(),
                 informationDto.getDescription(),
-                informationDto.getCOntent()
+                informationDto.getContent()
         );
     }
 }
