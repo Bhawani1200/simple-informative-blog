@@ -1,10 +1,11 @@
-
+import React from "react";
 import InformationComponent from "../components/InformationComponent";
 
 const page = () => {
-  
   return (
-   <InformationComponent/>
+    <div>
+      <InformationComponent />
+    </div>
   );
 };
 
