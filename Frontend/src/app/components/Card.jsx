@@ -119,16 +119,19 @@
 // };
 
 // export default Card;
-"use client"
+"use client";
+import Image from "next/image";
 import React from "react";
 
 const Card = () => {
   return (
     <div className="flex px-3 py-3">
       <div className="max-w-sm rounded overflow-hidden shadow-lg">
-        <img
+        <Image
           className="w-full"
-          src="https://tailwindcss.com/img/card-top.jpg"
+          // src="https://t4.ftcdn.net/jpg/01/04/78/75/360_F_104787586_63vz1PkylLEfSfZ08dqTnqJqlqdq0eXx.jpg"
+          // width={200}
+          // height={200}
           alt="Sunset in the mountains"
         />
         <div className="px-6 py-4">
