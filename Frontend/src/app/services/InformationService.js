@@ -1,7 +1,8 @@
-import axios from "axios"
+import axios from "axios";
 
-const BASE_API_URL="http://localhost:8080/api/informations"
+const BASE_API_URL = "http://localhost:8080/api/informations";
 
-export const listInformation=()=>axios.get(BASE_API_URL);
+export const listInformations = () => axios.get(BASE_API_URL);
 
-export const createInformation=(information)=>axios.post(BASE_API_URL,information);
+export const createInformation = (information) =>
+  axios.post(BASE_API_URL, information);

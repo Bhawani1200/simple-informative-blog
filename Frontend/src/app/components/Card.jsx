@@ -127,13 +127,13 @@ const Card = () => {
   return (
     <div className="flex px-3 py-3">
       <div className="max-w-sm rounded overflow-hidden shadow-lg">
-        <Image
+        {/* <Image
           className="w-full"
-          // src="https://t4.ftcdn.net/jpg/01/04/78/75/360_F_104787586_63vz1PkylLEfSfZ08dqTnqJqlqdq0eXx.jpg"
-          // width={200}
-          // height={200}
+           src="https://t4.ftcdn.net/jpg/01/04/78/75/360_F_104787586_63vz1PkylLEfSfZ08dqTnqJqlqdq0eXx.jpg"
+           width={200}
+           height={200}
           alt="Sunset in the mountains"
-        />
+        /> */}
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
           <p className="text-gray-700 text-base">

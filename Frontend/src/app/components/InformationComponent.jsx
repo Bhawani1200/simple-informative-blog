@@ -1,18 +1,19 @@
 "use client";
 import React, { useState } from "react";
 import { createInformation } from "../services/InformationService";
+// import { useNavigate } from "react-router-dom";
 
 const InformationComponent = () => {
   const [title, setTitle] = useState();
   const [description, setDescription] = useState();
   const [content, setContent] = useState();
 
-  const navigator=useNavigate();
+  // const navigator=useNavigate();
 
   function saveInformation(e) {
     e.preventDefault();
-    const objects = { title, description, content };
-    console.log(objects);
+    const information = { title, description, content };
+    console.log(information);
     createInformation(information)
       .then((response) => {
         console.log(response.data);
